@@ -40,8 +40,6 @@ operationListElement.addEventListener("click", (event) => {
   }
 
 
-
-
   if (operation === "=") {
     let operations = screenContent.match(/[+\-x/]/g); // get all operations on the screen
     let numbers = screenContent.split(/[+\-x/]/); // get all numbers on the screen

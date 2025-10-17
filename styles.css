@@ -7,38 +7,43 @@
 html {
     width:100vw;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
 }
 
 body {
     width: 100%;
+    height: 100%;
+        display: flex;
+        flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, rgba(0,0,0,0.4), rgb(255,255,255));
 }
 
 #calculator {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 65%;
+    height: 100%;
+    justify-content: stretch;
     margin: 1rem auto;
-    padding: 1rem 0.5rem;
+    padding: 0.5rem 0.5rem;
     border: 1px solid rgb(212, 208, 208);
 }
 
 #screen {
-    height: 3.5rem;
-    background-color: rgb(81, 82, 83);
+    height: 5rem;
+    background-color: rgba(255,255,255,0.3);
     padding: 0.5rem 0.8rem;
     align-self: center;
     display: flex;
-    font-size: 25px;
-    width: calc(100% - (5%*(2/3)));
+    font-size: 2.5rem;
+    width: 100%;
     box-sizing: border-box;
     align-items: center;
     border-radius: 6px;
     color: white;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.4rem;
 }
 
 #calculator-tabel {
@@ -46,14 +51,15 @@ body {
     justify-content: space-evenly;
     box-sizing: border-box;
     width: 100%;
-    /* align-items: stretch; */
+    flex:auto;
+    gap: 1rem;
 }
 
 #number-list {
     display: grid;
     width: 80%;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 0.2rem;
+    gap: 0.4rem;
 }
 
 
@@ -63,13 +69,14 @@ body {
     justify-content: center;
     background-color: rgb(126, 117, 126);
     padding: 1rem 0.5rem;
-    font-size: 22px;
+    font-size: 2rem;
     color: white;
     border-radius: 8px;
 }
 
 .numbers:hover {
-    background-color: rgb(209, 192, 209);
+    background-color: rgb(94, 91, 94);
+    transform: scale(1.04);
 }
 
 
@@ -79,8 +86,11 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 15%;
+    gap: 0.1rem;
     font-family:  Courier, monospace;
     font-weight: bold;
+    flex:auto;
+    font-size: 2rem;
 }
 
 .operation {
@@ -93,18 +103,61 @@ body {
     border: 1px solid;
     margin: 0.1rem 0;
     border-radius: 6px;
+    flex: auto;
 }
 
 .operation:hover {
-    background-color: rgb(195, 195, 167);
+    background-color: rgb(189, 189, 176);
     color: white;
 }
 
+#clear {
+    font-size: 1.5rem;
+}
 
 #clear:hover {
     background-color: red;
+
 }
 
-/* .numbers:first-child {
-    grid-column: 1/4;
-} */
+
+@media (max-width:768px) {
+    #screen {
+        font-size: 1.8rem;
+    }
+    #operations{
+        font-size: 1.5rem;
+    }
+    .numbers {
+        font-size:1.8rem;
+    }
+    #clear {
+    font-size: 1rem;
+    }
+    #calculator {
+        width: 90%;
+
+    }
+}
+
+
+
+
+@media (max-width:480px) {
+    #screen {
+        font-size: 1.5rem;
+    }
+    #operations{
+        font-size: 1rem;
+    }
+    .numbers {
+        font-size:1.5rem;
+    }
+    #clear {
+    font-size: 0.8rem;
+    }
+    #calculator {
+        width: 90%;
+
+    }
+}
