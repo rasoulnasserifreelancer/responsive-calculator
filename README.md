@@ -13,16 +13,16 @@ This project demonstrates DOM manipulation, event handling, and responsive desig
 
 
 🖼️ Screenshots
-Add screenshots of your project here for better presentation.
+
 ![Calculator Screenshot](./assets/calculator.png)
 
 
 
 🛠️ Installation & Usage
 - Clone the repository:
-git clone https://github.com/your-username/responsive-calculator.git
+git clone https://github.com/rasoulnasserifreelancer/calculator.git
 - Navigate into the project folder:
-cd responsive-calculator
+cd calculator
 - Open index.html in your browser.
 That’s it — no build tools or dependencies required!
 
@@ -34,14 +34,12 @@ That’s it — no build tools or dependencies required!
 
 🌟 Live Demo
 👉 View on Vercel
-(Replace with your actual deployment link)
+(recipe-app-api-nine.vercel.app)
 
-🤝 Contributing
-Contributions, issues, and feature requests are welcome!
-Feel free to fork this repo and submit a pull request.
+
 
 📜 License
 This project is licensed under the MIT License — free to use, modify, and distribute.
 
-Would you like me to also create a fancier version with badges (like GitHub stars, license, live demo, tech stack icons) so it looks more eye-catching for recruiters and portfolio viewers?
+
 
