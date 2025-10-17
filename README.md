@@ -34,7 +34,7 @@ That’s it — no build tools or dependencies required!
 
 🌟 Live Demo
 👉 View on Vercel
-(recipe-app-api-nine.vercel.app)
+((https://responsive-calculator-plum.vercel.app/))
 
 
 
